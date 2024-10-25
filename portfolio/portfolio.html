@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="portfolio.css">
+        
+    </head>
+    <body>
+        <nav>
+            <h3><strong>Aka</strong>sh</h3>
+            
+                <ul>
+                    <li><a href="#home ">Home</a></li>
+                    <li><a href="#about ">About me</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="#cotact-form">Contact me</a></li>
+                    <li><a href="#social"> Social</a></li>
+                </ul>
+                <div class="search-container">
+                    <form action="#" method="get">
+                      <input type="text" placeholder="Search..." name="search" class="search-input">
+                      <button type="submit" class="search-btn"> <i class="fas fa-search" id="search-icon"></i> Search</button>
+                    </form>
+                  </nav>
+<div class="home" id="home">
+                  <div class="container">
+
+                    <h3>Hi,</h3>
+                    <h2>I'm<span> Akash</span>A Frontend Developer
+                    </h2>
+                    <p>I'm Fresher </p>
+                    <p>Want to start my career as Frontend Developer </p>
+                    <div class="button">
+                        <button><a href="#contact-form">
+                         Contact me <i class="fa-solid fa-arrow-right"></i>
+                         </a>
+                        </button>
+                    <button><a href="#resume">
+                     My Resume <i class="fa-solid fa-download"></i></a>
+                    </button>
+                    </div>
+                  
+                  </div>
+                  <div class="image">
+                    <img src="akash.jpeg">
+                </div>
+            </div>
+
+            <!--about -->
+             <section  id="about">
+                <div class="about">
+                    <div class="intro">
+                        <p >Introduction</p>
+                        <h1>About Me</h1>
+                    </div>
+                     <div class="profile">
+                <img src="akash.jpeg">
+               </div>
+                    <div class="intro-item">
+                    <p>Enthusiastic and detail-oriented Frontend Developer with a solid foundation in HTML, CSS, and JavaScript. 
+                            And want to learn more modern frameworks such as React and Vue.js, to build and enhance my skills.
+                             </p>
+                             <div class="item">
+                              <!--languages-->
+                              <div class="item-value">
+                                <div class="language">
+                                  <i class="fa-solid fa-code"></i> 
+                                   <h3>Language  </h3>
+                                    <ul class="ed">
+                                      <li>HTML <i class="fa-brands fa-html5"></i></li>
+                                      <li>CSS <i class="fa-brands fa-css3-alt"></i></li>
+                                      <li>JAVASCRIPT <i class="fa-brands fa-js"></i></li>
+                                    </ul>
+                                </div>
+                                </div>
+                                <!--education-->
+                                <div class="item-value">
+                                <div class="education">
+                                  <i class="fa-solid fa-graduation-cap"></i> 
+                                   <h3>Education  </h3>
+                                    <ul class="ed">
+                                      <li><h4>BCA</h4><p>(Maharishi Dayanand University,Faridabad)</p></li>
+                                      <br>
+                                      <li><h4>MCA</h4><p>(Maharishi Dayanand University,Faridabad)</p></li>
+                                    </ul>
+                                </div>
+                                </div>
+                             </div>
+                             </div>
+               </div>
+
+
+
+  </section>
+
+             
+<!--resume-->
+<section id="resume">
+    <div class="resume">
+      <h1>My Resume</h1>
+      <div class="resume-click">
+      <div class="resume-button">
+        <button onclick="viewResume()">View Resume</button>
+        <a href="akash.pdf" download="My_Resume.pdf">
+          <button>Download Resume</button>
+        </a>
+      </div>
+      <!-- Hidden initially, resume will appear when "View Resume" is clicked -->
+      <div class="resume-viewer" id="resumeViewer">
+        <iframe src="akash.pdf" id="resumeFrame" width="100%" height="500px" style="border: none;"></iframe>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--contact-->
+             <section class="contact-form" id="contact-form">
+                <h2 class="contact-me">Contact<span>Me</span></h2>
+
+                <form action="a">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name">
+                        <input type="Email" placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Phone Number">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="send message" class="btn-1">
+                </form>
+
+             </section>
+
+
+
+             <!--footer-->
+             <footer class="footer">
+
+                <div class="social" id="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <ul class="list">
+                    <li><a>FAQ</a></li>                    
+                    <li><a>Services</a></li>
+                    <li><a>About Me</a></li>
+                    <li>
+                      <a>  Contact</a>
+                    </li>
+                    <li>
+                       <a> Privacy Policy</a>
+                    </li>
+                </ul>
+                <p class="copyright">@ 2024 Akash | All Rights Reserved</p>
+                
+             </footer>
+             <script src="Portfolio.js"></script>  
+    </body>
+</html>
